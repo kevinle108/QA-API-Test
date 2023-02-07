@@ -210,5 +210,23 @@ namespace QA_API_Test
                 content.Should().Be("{}");
             }
         }
+
+        [Fact]
+        public async void JSONPlaceholder_Negative_Invalid_Method()
+        {
+            string baseUrl = "https://jsonplaceholder.typicode.com/";
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri(baseUrl);
+
+            var response = await client.DeleteAsync("posts/");
+            var content = await response.Content.ReadAsStringAsync();
+            var data = JsonSerializer.Deserialize<Post>(content);
+
+            using (new AssertionScope())
+            {
+                response.IsSuccessStatusCode.Should().BeFalse();
+                content.Should().Be("{}");
+            }
+        }
     }
 }
