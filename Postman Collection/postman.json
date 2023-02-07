@@ -1,0 +1,410 @@
+{
+  "collection": {
+    "info": {
+      "_postman_id": "6ee8f10c-f5e4-4555-bf8c-74593f3ebb9a",
+      "name": "Test Collection",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2023-02-07T17:09:36.000Z"
+    },
+    "item": [
+      {
+        "name": "jsonplaceholder - GET all posts",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "id": "37fd0a19-ef70-4445-b85d-2ac6edfd9bd1",
+              "exec": [
+                "pm.test(\"Status code is 200\", function () {\r",
+                "    pm.response.to.have.status(200);\r",
+                "});"
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "ac95f187-62dc-40cf-87dd-8a97a38e7f59",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://jsonplaceholder.typicode.com/posts",
+            "protocol": "https",
+            "host": [
+              "jsonplaceholder",
+              "typicode",
+              "com"
+            ],
+            "path": [
+              "posts"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "jsonplaceholder - Create a post",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "id": "308cbd70-0a12-43df-83d7-ab5908643cc1",
+              "exec": [
+                "pm.test(\"Successful POST request\", function () {\r",
+                "    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+                "});"
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "ba8f5ed0-963b-46ba-8d61-dfe4b073c509",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"userId\": 1, \r\n    \"title\": \"foo\",\r\n    \"body\": \"bar\"\r\n}"
+          },
+          "url": {
+            "raw": "https://jsonplaceholder.typicode.com/posts",
+            "protocol": "https",
+            "host": [
+              "jsonplaceholder",
+              "typicode",
+              "com"
+            ],
+            "path": [
+              "posts"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "jsonplaceholder - Update a post",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "id": "75354b78-9562-45ce-baa0-395537d4dd3a",
+              "exec": [
+                "pm.test(\"Status code is 200\", function () {\r",
+                "    pm.response.to.have.status(200);\r",
+                "});"
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "b5d20c60-a853-4e74-a152-c1767dcf05a7",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "PUT",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"id\": 1,\r\n    \"userId\": 1, \r\n    \"title\": \"foo\",\r\n    \"body\": \"bar\"\r\n}"
+          },
+          "url": {
+            "raw": "https://jsonplaceholder.typicode.com/posts/1",
+            "protocol": "https",
+            "host": [
+              "jsonplaceholder",
+              "typicode",
+              "com"
+            ],
+            "path": [
+              "posts",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "jsonplaceholder - Patch a post",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "id": "5fdd7ba4-6e87-4fb0-be66-2b393918df1a",
+              "exec": [
+                "pm.test(\"Status code is 200\", function () {\r",
+                "    pm.response.to.have.status(200);\r",
+                "});"
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "891b7b33-5229-4676-860f-5c27b48c71c2",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "PATCH",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"title\": \"foo\",\r\n    \"body\": \"bar\"\r\n}"
+          },
+          "url": {
+            "raw": "https://jsonplaceholder.typicode.com/posts/1",
+            "protocol": "https",
+            "host": [
+              "jsonplaceholder",
+              "typicode",
+              "com"
+            ],
+            "path": [
+              "posts",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "jsonplaceholder - Delete a post",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "id": "ff5094f8-4f7e-4632-99d5-c83ead0c8545",
+              "exec": [
+                "pm.test(\"Status code is 200\", function () {\r",
+                "    pm.response.to.have.status(200);\r",
+                "});"
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "8d57d6bf-3c42-444e-abfa-eca42f42076e",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "https://jsonplaceholder.typicode.com/posts/1",
+            "protocol": "https",
+            "host": [
+              "jsonplaceholder",
+              "typicode",
+              "com"
+            ],
+            "path": [
+              "posts",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "jsonplaceholder - Negative Test - Invalid DELETE",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "id": "57a4412c-10cd-4c5b-8853-9762e3f242bf",
+              "exec": [
+                "pm.test(\"Status code is 404\", function () {\r",
+                "    pm.response.to.have.status(404);\r",
+                "});"
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "3f611f69-deed-4cbd-8f28-8a08a800bcdf",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": {
+            "raw": "https://jsonplaceholder.typicode.com/posts",
+            "protocol": "https",
+            "host": [
+              "jsonplaceholder",
+              "typicode",
+              "com"
+            ],
+            "path": [
+              "posts"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "jsonplaceholder - GET specific comments",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "id": "37fd0a19-ef70-4445-b85d-2ac6edfd9bd1",
+              "exec": [
+                "pm.test(\"Status code is 200\", function () {\r",
+                "    pm.response.to.have.status(200);\r",
+                "});"
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "ae8eeb32-e719-43bf-9ad2-692710380939",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://jsonplaceholder.typicode.com/comments?postId=1",
+            "protocol": "https",
+            "host": [
+              "jsonplaceholder",
+              "typicode",
+              "com"
+            ],
+            "path": [
+              "comments"
+            ],
+            "query": [
+              {
+                "key": "postId",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "pokeapi - GET by pokemon name",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "id": "c88494a0-0468-4d77-afdf-4eab2379474e",
+              "exec": [
+                "pm.test(\"Status code is 200\", function () {\r",
+                "    pm.response.to.have.status(200);\r",
+                "});\r",
+                "\r",
+                "pm.test(\"Correct name\", function () {\r",
+                "    var jsonData = pm.response.json();\r",
+                "    pm.expect(jsonData.name).to.eql('lugia');\r",
+                "});\r",
+                "\r",
+                "pm.test(\"Correct base_experience\", function () {\r",
+                "    var jsonData = pm.response.json();\r",
+                "    pm.expect(jsonData.base_experience).to.eql(340);\r",
+                "});\r",
+                "\r",
+                "pm.test(\"Correct weight\", function () {\r",
+                "    var jsonData = pm.response.json();\r",
+                "    pm.expect(jsonData.weight).to.eql(2160);\r",
+                "});"
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "2c15a792-7cde-4e6e-8779-ccc1f855f6da",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://pokeapi.co/api/v2/pokemon/lugia",
+            "protocol": "https",
+            "host": [
+              "pokeapi",
+              "co"
+            ],
+            "path": [
+              "api",
+              "v2",
+              "pokemon",
+              "lugia"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "pokeapi - GET generation info",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "id": "c88494a0-0468-4d77-afdf-4eab2379474e",
+              "exec": [
+                "pm.test(\"Status code is 200\", function () {\r",
+                "    pm.response.to.have.status(200);\r",
+                "});\r",
+                "\r",
+                "pm.test(\"Region name is Kanto\", function () {\r",
+                "    var jsonData = pm.response.json();\r",
+                "    pm.expect(jsonData.main_region.name).to.eql('kanto');\r",
+                "});\r",
+                "\r",
+                "pm.test(\"Contains 151 species\", function () {\r",
+                "    var jsonData = pm.response.json();\r",
+                "    pm.expect(jsonData.pokemon_species.length).to.eql(151);\r",
+                "});\r",
+                "\r",
+                "pm.test(\"Contains 15 types\", function () {\r",
+                "    var jsonData = pm.response.json();\r",
+                "    pm.expect(jsonData.types.length).to.eql(15);\r",
+                "});\r",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "78b073dd-6d87-41a0-a0e1-f76809826003",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://pokeapi.co/api/v2/generation/1",
+            "protocol": "https",
+            "host": [
+              "pokeapi",
+              "co"
+            ],
+            "path": [
+              "api",
+              "v2",
+              "generation",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+}
