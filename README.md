@@ -2,6 +2,7 @@
 ## API Testing Assignment 
 
 ## #1: Postman API Testing
+### [Link to Postman Collection JSON](https://github.com/kevinle108/QA-API-Test/blob/main/Postman%20Collection/Test%20Collection.postman_collection.json)
 Choose a public API (this GitHub page is an excellent resource) and create a
 postman collection to test the API. The postman collection should contain at least
 15 tests, which in turn should cover all of the following criteria:
@@ -34,6 +35,7 @@ If your code requires any setup in order to build or run your tests, include a r
 Check your completed tests into a GitHub repository. 
 
 ## #3: Performance Testing
+### [Link to JMeter Report](https://github.com/kevinle108/QA-API-Test/tree/main/JMeter%20Performance%20Test)
 Using a performance testing tool of your choice, create a performance test that simulates 1500
 users accessing a website of your choice over a 30-second period. Create a table or graph that
 displays the results of your tests. Write a 3-5 sentence paragraph explaining the results of your
