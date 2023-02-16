@@ -1,6 +1,6 @@
-# JMeter Performance Test on [Svelte.dev](https://svelte.dev/)
+# JMeter Performance Test
 
-[Click to view the full JMeter Dashboard Report](https://kevinle108.github.io/jmeter-report/)
+Subject: [Svelte.dev](https://svelte.dev/)
 
 ## 7 Routes Tested:
 - /
@@ -17,6 +17,8 @@ Created the test plan using the JMeter UI. Afterwards, ran the test and generate
 
 Using the CLI to run the test:
 {Screenshot here}
+
+[Full JMeter Dashboard Report](https://kevinle108.github.io/jmeter-report/)
 
 ## Findings
 The website performed well underload. Sent 16,500 requests with no failures. Two of the routes, "/tutorial" and "/repl", made their own network requests that were logged by JMeter. 
