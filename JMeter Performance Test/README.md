@@ -1,8 +1,8 @@
 # JMeter Performance Test
 
-Subject: [Svelte.dev](https://svelte.dev/)
+## Subject: [Svelte.dev](https://svelte.dev/)
 
-## 7 Routes Tested:
+7 Routes Tested:
 - /
 - /tutorial
 - /docs
@@ -13,12 +13,19 @@ Subject: [Svelte.dev](https://svelte.dev/)
 
 ## Method
 Created the test plan using the JMeter UI. Afterwards, ran the test and generated a report via JMeter CLI
-[Link to JMeter Test Plan JMX file]()
+
+### [Click to go to JMX File](https://github.com/kevinle108/QA-API-Test/blob/main/JMeter%20Performance%20Test/svelte-test-plan.jmx)
 
 Using the CLI to run the test:
-{Screenshot here}
+![terminal-screenshot](https://github.com/kevinle108/QA-API-Test/blob/main/JMeter%20Performance%20Test/cli-screenshot.png)
 
-[Full JMeter Dashboard Report](https://kevinle108.github.io/jmeter-report/)
+### [Click to go to Full JMeter Dashboard Report](https://kevinle108.github.io/jmeter-report/)
 
 ## Findings
-The website performed well underload. Sent 16,500 requests with no failures. Two of the routes, "/tutorial" and "/repl", made their own network requests that were logged by JMeter. 
+ Two of the routes, "/tutorial" and "/repl", made their own network requests that were logged by JMeter as seen in the graph below:
+![table](https://github.com/kevinle108/QA-API-Test/blob/main/JMeter%20Performance%20Test/jmeter-table.png)
+
+Another notable finding is that all requests took approximately the same amount of time except for the "/docs" route as seen in the graph below:  
+![graph](https://github.com/kevinle108/QA-API-Test/blob/main/JMeter%20Performance%20Test/jmeter-graph.png)
+
+But overall, the website performed well under load. Even with 16,500 total requests sent, none failed. 
