@@ -5,9 +5,9 @@
 Choose a public API (this GitHub page is an excellent resource) and create a
 postman collection to test the API. The postman collection should contain at least
 15 tests, which in turn should cover all of the following criteria:
-1. Test at least 3 different HTTP methods.
-2. Include at least one test for an endpoint that uses query string parameters.
-3. Include at least one test for an endpoint that requires a request body. 4.
+- [x] 1. Test at least 3 different HTTP methods.
+- [x] 2. Include at least one test for an endpoint that uses query string parameters.
+- [x] 3. Include at least one test for an endpoint that requires a request body. 4.
 Include at least one negative test.
 All your Postman tests should contain tests (in the Tests tab) that verify the test
 passed. At a minimum, they should verify the correct expected status code was
