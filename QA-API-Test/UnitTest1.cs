@@ -20,6 +20,7 @@ namespace QA_API_Test
         [Fact]
         public async void SteamApiTest()
         {
+            
             string baseUrl = "https://www.valvesoftware.com/";
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(baseUrl);

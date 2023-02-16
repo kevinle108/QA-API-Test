@@ -1,1 +1,1 @@
-[Link to JSON Postman Collection](https://api.postman.com/collections/14464357-6ee8f10c-f5e4-4555-bf8c-74593f3ebb9a?access_key=PMAT-01GRPDZYW53VYVY7G3B1JJMW4K)
+[Link to JSON Postman Collection](https://api.postman.com/collections/14464357-7b6afd1a-ae11-4832-b7f6-ec78a3f2efef?access_key=PMAT-01GSDXHP0FFHR56ZBWY43GDJE3)
