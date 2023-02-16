@@ -1,2 +1,0 @@
-Link to Postman Collection JSON: 
-https://github.com/kevinle108/QA-API-Test/blob/main/Postman%20Collection/Test%20Collection.postman_collection.json 
