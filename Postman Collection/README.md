@@ -1,1 +1,1 @@
-[Link to JSON Postman Collection](https://api.postman.com/collections/14464357-7b6afd1a-ae11-4832-b7f6-ec78a3f2efef?access_key=PMAT-01GSDXHP0FFHR56ZBWY43GDJE3)
+Link to Postman Collection JSON: https://github.com/kevinle108/QA-API-Test/blob/main/Postman%20Collection/Test%20Collection.postman_collection.json 
