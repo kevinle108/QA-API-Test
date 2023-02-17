@@ -1,6 +1,4 @@
-﻿# QA Analyst | Course 2 
-## API Testing Assignment 
-
+﻿# QA Analyst | Course 2 | API Testing 
 ## #1: Postman API Testing
 ### Link: [Postman Collection JSON](https://github.com/kevinle108/QA-API-Test/blob/main/Postman%20Collection/Test%20Collection.postman_collection.json)
 Choose a public API (this GitHub page is an excellent resource) and create a
